@@ -13,23 +13,20 @@ import javax.persistence.Id;
 @Entity
 public class User {
 
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String name;
+    private String username;
     private String password;
 
 
-    public Long getId() {
-        return id;
-    }
+
 
     public String getName() {
-        return name;
+        return username;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.username = name;
     }
 
     public String getPassword() {
